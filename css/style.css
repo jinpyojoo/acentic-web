@@ -1,0 +1,209 @@
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; }
+* {
+    margin: 0;
+    padding: 0;  
+}
+section#bg {
+    position: relative;
+    background: linear-gradient(45deg, blueviolet 30%, rgba(255, 20, 60, 0.5));
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'GmarketSansMedium';
+}
+section#page1 {
+    width: 100vw;
+    background: white;
+    padding-top: 50px;
+    font-family: 'GmarketSansMedium';
+    color: gray;
+    text-align: center;
+}
+section#page1 h1 {
+    font-size: 50px;
+}
+#page2 {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    padding-top: 50px;
+    font-family: 'GmarketSansMedium';
+    color: gray;
+    text-align: center;
+}
+.char {
+    width: 30vw;
+    height: 30vw;
+    background: #F0F0F0;
+    border-radius: 300px;
+    margin: 30px;
+}
+@media screen and (min-width: 600px){
+    .char {
+        width: 200px;
+        height: 200px;
+    }
+}
+.charac {
+    text-align: center;
+    background: white;
+}
+body {
+    background-color: black;
+    background: url('https://source.unsplash.com/1920x1080?programming');
+    animation: bodyeffect 10s linear infinite;
+    background-position: left middle;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+  }
+  body::-webkit-scrollbar-track {
+    display: none;
+  }
+section .wave{
+    background-image: url('../image/wave.png');
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    background-size: 1000px 100px;
+    
+}
+.wave1{
+    animation: wave_ani 20s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0px;
+}
+.wave2{
+    animation: wave_ani2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+.wave3{
+    animation: wave_ani 5s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+.wave4{
+    animation: wave_ani2 10s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20;
+}
+.title h2{
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 35vh;
+    font-size: 50px;
+}
+.title h3{
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+h2 {
+    color: black;
+}
+@keyframes wave_ani 
+{
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes wave_ani2
+{
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes wave_ani3
+{
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes loading
+{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.btn {
+    border: solid black;
+    display: block;
+    text-align: center;
+    margin-left: 43vw;
+    margin-right: 43vw;
+    border-width: 1px;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: black;
+}
+
+footer {
+    padding: 50px;
+    margin-top: 50px;
+    background: black;
+    margin-bottom: 30px;
+}
+
+.image_frame-ag {
+    margin-top: 100px;
+    width: 100%;
+    padding-top: 25vh !important;
+    padding-bottom: 25vh !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../image/br31.png);
+}
+.image_frame-aur {
+    width: 100%;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    background-size: cover !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../image/aurore.png);
+}
+.image_frame-api {
+    width: 100%;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    background-size: cover !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../image/api.png);
+}
